@@ -65,8 +65,6 @@ def save_password():
 
 
 def all_list():
-    root = Tk()
-    root.withdraw()
     user_input = askstring("Info", "Enter the password to access your info.")
     if user_input == "password":
         try:
@@ -88,8 +86,6 @@ def all_list():
 
 
 def empty_list():
-    root = Tk()
-    root.withdraw()
     user_input = askstring("Delete Info", "Enter the password to delete all your info.")
     if user_input == "password":
         with open("data.json", mode="w") as data_file:
